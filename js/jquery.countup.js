@@ -64,7 +64,11 @@
 
             // Updates the number until we're done
             var f = function() {
+		
                 $this.text($this.data('counterup-nums').shift());
+        		if ( $this.is("#temp") ){
+        			$this.text($this.text() + '+');
+        		}
                 if ($this.data('counterup-nums').length) {
                     setTimeout($this.data('counterup-func'),delay);
                 } else {
@@ -84,5 +88,6 @@
     });
 
   };
-
+	
 })( jQuery );
+

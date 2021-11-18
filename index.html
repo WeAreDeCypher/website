@@ -25,6 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- // Meta Tags -->
       <!--booststrap-->
+	<link rel="icon" href="images/g1.png" sizes="32x32">
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
       <!--//booststrap end-->
       <!-- font-awesome icons -->
@@ -378,7 +379,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="stats">
 						<div class="row stats_inner">
 							<div class="col-md-6 col-sm-6 col-xs-6 stat-grids">
-								<p class="counter-agileits-w3layouts">500</p><p>
+								<p class="counter-agileits-w3layouts" id="temp">500</p>
 								<div class="stats-text-wthree">
 									<h3>Discord Members</h3>
 								</div>
@@ -409,8 +410,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- //stats -->
 
 				</div>
-				<div class="col-md-5 about-left">
-					<img src="images/g1.jpeg" class="img-fluid" alt="">
+				<div class="col-md-5 about-center">
+					<img src="images/g1.png" class="img-fluid" alt="" height="60%" width="60%" style="margin-left: 30px">
 				</div>
 				</div>
 		</div>
@@ -513,6 +514,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/jquery.countup.js"></script>
 	<script>
 		$('.counter-agileits-w3layouts').countUp();
+		$("temp").html("500+");
 	</script>
 	<!-- //stats -->
 
@@ -545,6 +547,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+
 </script> 
 <!-- //scrolling script -->
 
